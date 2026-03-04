@@ -82,3 +82,22 @@ nav{
     left: 100%;
     top: 0px;
 }
+
+#main-menu>li>a{
+    position: relative;
+}
+
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0%;
+    background: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s;
+}
+
+#main-menu>li:hover>a::before{
+    width: 100px;
+}
